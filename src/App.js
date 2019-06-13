@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import './App.css';
 import DogsListContainer from './components/DogsListContainer';
-import DogBreedImages from './components/DogBreedImages';
-import { Route } from 'react-router-dom'
+import DogBreedImagesContainer from './components/DogBreedImagesContainer';
+import { Route, Link } from 'react-router-dom'
 
 class App extends Component {
   render() {
@@ -10,7 +10,7 @@ class App extends Component {
       <div className="App">
         <main>
         <Route exact path="/" component={DogsListContainer} />
-        <Route exact path="/dog-breeds/:breed" component={DogBreedImages} />
+        <Route exact path="/dog-breeds/:breed" component={DogBreedImagesContainer} />
         </main>
       </div>
     );
